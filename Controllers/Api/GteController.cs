@@ -20,7 +20,7 @@ public class GteController : Controller {
 
     [HttpGet("casas-metros-terreno-310")]
     public IActionResult CasasMetrosTerreno310(){
-        //  Lista de las casas que tengan 310 metros de terreno.
+        // Lista de las casas que tengan 310 metros de terreno.
 
         MongoClient client = new MongoClient(CadenasConexion.MONGO_DB);
         var db = client.GetDatabase("Inmuebles");
